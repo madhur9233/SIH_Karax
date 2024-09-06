@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automated Monitoring System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Website Home -->
+    <header>
+        <h1>Welcome to Automated Classroom Monitoring System</h1>
+        <nav>
+            <a href="#signIn">Sign In</a>
+        </nav>
+    </header>
+
+    <!-- Sign In Section -->
+    <section id="signIn">
+        <h2>Sign In</h2>
+        <form id="signInForm">
+            <label for="role">Select Role:</label>
+            <select id="role" name="role">
+                <option value="student">Student</option>
+                <option value="admin">Admin</option>
+            </select>
+            <button type="button" onclick="signIn()">Sign In</button>
+        </form>
+    </section>
+
+    <!-- Student Dashboard -->
+    <section id="studentDashboard" class="dashboard">
+        <h2>Student Dashboard</h2>
+        <nav>
+            <ul>
+                <li><a href="#trainingContent">Training Content</a></li>
+                <li><a href="#mockTest">Mock Test</a></li>
+                <li><a href="#annualReport">Annual Report</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#compiler">Compiler</a></li>
+                <li><a href="#aiPortfolio">AI Portfolio</a></li>
+                <li><a href="#webcamRecording">Webcam Recording</a></li>
+                <li><a href="#faceDetection">Face Detection Attendance System</a></li>
+                <li><a href="#chatbotAssistance">Chatbot Assistance</a></li>
+            </ul>
+        </nav>
+    </section>
+
+    <!-- Admin Dashboard -->
+    <section id="adminDashboard" class="dashboard">
+        <h2>Admin Dashboard</h2>
+        <nav>
+            <ul>
+                <li><a href="#uploadTrainingContent">Upload Training Content</a></li>
+                <li><a href="#fetchStudentData">Fetch Student Data</a></li>
+            </ul>
+        </nav>
+    </section>
+
+    <!-- Sections based on the UML Diagram -->
+    <section id="trainingContent">
+        <h3>Training Content</h3>
+        <p>Access training materials here.</p>
+    </section>
+
+    <section id="mockTest">
+        <h3>Mock Test</h3>
+        <p>Participate in mock tests.</p>
+    </section>
+
+    <section id="annualReport">
+        <h3>Annual Report</h3>
+        <p>View your annual performance report.</p>
+    </section>
+
+    <section id="achievements">
+        <h3>Achievements</h3>
+        <p>Check out your achievements.</p>
+    </section>
+
+    <section id="compiler">
+        <h3>Compiler</h3>
+        <p>Code and compile your programs here.</p>
+    </section>
+
+    <section id="aiPortfolio">
+        <h3>AI Portfolio</h3>
+        <p>Manage your AI portfolio.</p>
+    </section>
+
+    <section id="webcamRecording">
+        <h3>Webcam Recording</h3>
+        <p>Record your sessions and monitor unusual activities.</p>
+    </section>
+
+    <section id="faceDetection">
+        <h3>Face Detection Attendance System</h3>
+        <p>Face detection system for automatic attendance.</p>
+    </section>
+
+    <section id="chatbotAssistance">
+        <h3>Chatbot Assistance</h3>
+        <p>Get assistance from the AI chatbot for subject-related questions.</p>
+    </section>
+
+    <section id="uploadTrainingContent">
+        <h3>Upload Training Content</h3>
+        <p>Admins can upload training content here.</p>
+    </section>
+
+    <section id="fetchStudentData">
+        <h3>Fetch Student Data</h3>
+        <p>Admins can fetch and analyze student data.</p>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

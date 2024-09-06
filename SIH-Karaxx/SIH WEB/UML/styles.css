@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+nav {
+    margin: 15px 0;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+}
+
+.dashboard {
+    display: none;
+}
+
+h2, h3 {
+    margin-left: 15px;
+}
+
+section {
+    padding: 15px;
+    margin: 15px;
+    border: 1px solid #ddd;
+}
+
+section p {
+    margin: 5px 0;
+}

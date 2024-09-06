@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduPro HUB</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #333;
+            color: #fff;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #444;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        .logo img {
+            height: 40px;
+            margin-right: 10px;
+        }
+        .logo h1 {
+            margin: 0;
+            font-size: 24px;
+            color: #00f;
+        }
+        .logo h1 span {
+            font-size: 18px;
+            color: #fff;
+        }
+        .nav {
+            display: flex;
+            gap: 20px;
+        }
+        .nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .nav a:hover {
+            text-decoration: underline;
+        }
+        .menu-icon {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+        .menu-icon div {
+            width: 25px;
+            height: 3px;
+            background-color: #fff;
+            margin: 4px 0;
+        }
+        .mobile-nav {
+            display: none;
+            flex-direction: column;
+            gap: 10px;
+        }
+        @media (max-width: 768px) {
+            .nav {
+                display: none;
+            }
+            .menu-icon {
+                display: flex;
+            }
+            .mobile-nav {
+                display: flex;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="logo.png" alt="EduPro Logo">
+            <h1>EduPro <span>HUB</span></h1>
+        </div>
+        <nav class="nav">
+            <a href="#">HOME</a>
+            <a href="#">TEAM</a>
+            <a href="#">CONTACT US</a>
+            <a href="#">SIGN IN</a>
+        </nav>
+        <div class="menu-icon" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </header>
+    <nav class="mobile-nav" id="mobileNav">
+        <a href="#">HOME</a>
+        <a href="#">TEAM</a>
+        <a href="#">CONTACT US</a>
+        <a href="#">SIGN IN</a>
+    </nav>
+    <script>
+        function toggleMenu() {
+            var mobileNav = document.getElementById('mobileNav');
+            if (mobileNav.style.display === 'flex') {
+                mobileNav.style.display = 'none';
+            } else {
+                mobileNav.style.display = 'flex';
+            }
+        }
+    </script>
+</body>
+</html>
